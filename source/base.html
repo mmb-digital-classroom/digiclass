@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}Welcome to Clay{% endblock %}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+  <link href="/static/styles/app.css" rel="stylesheet">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+
+  <div class="✓">Powered by <a href="http://lucuma.github.com/Clay">Clay</a></div>
+
+  <script src="/static/scripts/app.js"></script>
+  
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
